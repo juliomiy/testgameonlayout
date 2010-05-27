@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<EditText  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="Mets beat Yankees"
+    android:id="@+id/game"
+    />
+<DatePicker 
+    android:id="@+id/datepicker" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_below="@id/game">
+ </DatePicker>
+
+<Spinner
+    android:text="@string/app_name"
+    android:id="@+id/dateselection"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:layout_below="@id/datepicker">
+ </Spinner>
+ <DatePicker 
+    android:id="@+id/datepickerend" 
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content"
+    android:visibility="invisible"
+    android:layout_below="@id/dateselection">
+ </DatePicker>
+ 
+<Button 
+     android:text="@string/save"
+     android:id="@+id/save" 
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+ >
+ </Button>
+ <Button 
+     android:text="@string/cancel" 
+     android:id="@+id/cancel"
+     android:layout_width="wrap_content" 
+     android:layout_height="wrap_content"
+     android:layout_alignParentBottom="true"
+     android:layout_toRightOf="@id/save"
+ >
+ </Button>
+ </RelativeLayout>
